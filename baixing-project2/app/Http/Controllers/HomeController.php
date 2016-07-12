@@ -24,6 +24,32 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        var_dump("dheiuw");
+        //return view('home');
+    }
+
+
+    /**
+     * @param Request $request
+     */
+    public function addSubmission(Request $request)
+    {
+
+    }
+
+    /**
+     * @param $id  -- problem id
+     */
+    public  function  showProblem($id)
+    {
+
+    }
+
+    /**
+     * @param $id --- topic id
+     */
+    public function showTopicProblems($id)
+    {
+
     }
 }
