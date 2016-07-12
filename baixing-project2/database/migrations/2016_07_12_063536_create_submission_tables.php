@@ -14,7 +14,11 @@ class CreateSubmissionTables extends Migration
     {
         Schema::create('submissions', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->unsignedInteger('uid');
+            $table->unsignedInteger('pid');
+            $table->string('lang',10);
+            $table->longText('code');
+            $table->timestamp('created_at');
         });
     }
 

@@ -14,6 +14,10 @@ class CreateProbelmsTables extends Migration
     {
         Schema::create('problems', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('tid');
+            $table->mediumText('content');
+            $table->boolean('visible');
+            $table->unsignedInteger('created_by');
             $table->timestamps();
         });
     }

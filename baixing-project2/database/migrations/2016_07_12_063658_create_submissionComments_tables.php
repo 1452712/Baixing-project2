@@ -14,7 +14,10 @@ class CreateSubmissionCommentsTables extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->unsignedInteger('sid');
+            $table->mediumText('body');
+            $table->unsignedInteger('created_by');
+            $table->timestamp('created_at');
         });
     }
 
