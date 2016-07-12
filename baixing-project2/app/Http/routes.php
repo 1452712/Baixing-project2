@@ -29,7 +29,7 @@ Route::group(['middleware' => ['web']], function () {
     //routes here
     Route::get('/admin','AdminController@index');
     Route::get('/admin/login','Admin\AuthController@showLoginForm');
-    Route::post('/admin/login','Admin\AuthController@login');
+    Route::post('/admin/login','Admin\AuthController@adminLogin');
     Route::get('/admin/logout','Admin\AuthController@logout');
 
     // Registration Routes...
