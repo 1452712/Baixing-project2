@@ -16,7 +16,7 @@ class CreateProbelmsTables extends Migration
             $table->increments('id');
             $table->unsignedInteger('tid');
             $table->mediumText('content');
-            $table->boolean('visible');
+            $table->boolean('visible')->default(1);
             $table->unsignedInteger('created_by');
             $table->timestamps();
         });

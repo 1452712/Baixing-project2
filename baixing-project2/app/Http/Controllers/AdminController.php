@@ -12,7 +12,7 @@ class AdminController extends Controller
     //
     public function __construct()
     {
-        $this->middleware('gadmin');
+        $this->middleware('admin');
     }
 
     public function index(){

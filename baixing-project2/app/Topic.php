@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Topic extends Model
 {
     //
-    public $table ="topic";
+    public $table ="topics";
 }

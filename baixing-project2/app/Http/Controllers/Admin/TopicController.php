@@ -18,28 +18,17 @@ class TopicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function showTopics()
     {
         //
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new topic.
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
     {
         //
     }
@@ -50,7 +39,7 @@ class TopicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showTopic($id)
     {
         //
     }
@@ -74,17 +63,6 @@ class TopicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
     {
         //
     }

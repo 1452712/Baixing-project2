@@ -24,22 +24,21 @@ class ProblemController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new problem.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function createProblem(Request $request)
     {
         //
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Show the form for creating a new comment.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function createComment(Request $request)
     {
         //
     }
@@ -50,7 +49,7 @@ class ProblemController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showProblem($id)
     {
         //
     }
