@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="84f84531-c6b7-43e6-b4f9-0928b050c237" name="baixng_camp" url="http://115.28.180.158">
+        <fileTransfer host="115.28.180.158" port="22" rootFolder="/var/www/Baixing-project2/baixing-project2" accessType="SFTP" password="dfe2dfeedfd0dfc0dfccdfc8dfcddfc9dfc2df9bdf99" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
