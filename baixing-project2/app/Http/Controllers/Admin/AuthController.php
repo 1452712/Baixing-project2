@@ -76,6 +76,33 @@ class AuthController extends Controller
         }
     }
 
+    public function addAdmin(Request $request)
+    {
+
+        $validator =  Validator::make($request->all(), [
+            'name' => 'required|max:30',
+            'email' => 'required|email|max:30|unique:admins',
+            'password' => 'required|confirmed|min:6',
+            ]);
+        if ($validator->fails()){
+            //
+            return "New admin user infomation is incorrect,back to correct it please";
+        }
+
+        DB::beginTransaction();
+        $newAdmin = new Admin();
+        $newAdmin->name = $request['name'];
+        $newAdmin->email = $request['email'];
+        $newAdmin->password = bcrypt($request['password']);
+
+        if(!$newAdmin->exists){
+            DB::rollback();
+            return "Add new admin user failed.";
+        }
+        DB::commit();
+        return redirect('/admin');
+    }
+
     public function getRegister()
     {
         return view('admin.auth.register');

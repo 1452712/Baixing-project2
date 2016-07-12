@@ -26,4 +26,29 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+
+    /**
+     * @param Request $request
+     */
+    public function addSubmission(Request $request)
+    {
+
+    }
+
+    /**
+     * @param $id  -- problem id
+     */
+    public  function  showProblem($id)
+    {
+
+    }
+
+    /**
+     * @param $id --- topic id
+     */
+    public function showTopicProblems($id)
+    {
+
+    }
 }
