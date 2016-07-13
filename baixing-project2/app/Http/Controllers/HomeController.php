@@ -52,4 +52,17 @@ class HomeController extends Controller
     {
 
     }
+
+    public function showResume()
+    {
+
+    }
+
+    /**
+     * @param Request $request
+     */
+    public function addResume()
+    {
+        
+    }
 }

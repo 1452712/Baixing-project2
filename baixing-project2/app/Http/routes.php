@@ -24,6 +24,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/topic/{id}','HomeController@showTopicProblems');
     Route::get('/problem/{id}','HomeController@showProblem');
     Route::post('/problem/{id}/submission','HomeController@addSubmission');
+    Route::get('/info/{id}','HomeController@showResume');
+    Route::post('/info/{id}/submission','HomeController@addResume');
 
 });
 
